@@ -1,0 +1,62 @@
+﻿<!DOCTYPE HTML>
+<html>
+ 
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script type="text/javascript" src="JS/jquery-1.9.1.min.js"></script>
+
+<link rel="Stylesheet"  href="../CSS/ui_PumpingStationRTMonitor.css" media="screen" />
+<script type="text/javascript" src="../JS/ui_PumpingStationRTMonitor.js"></script>
+
+<script type="text/javascript" src="image_svg.js"></script>
+
+<link rel="stylesheet" href="image_svg.css" media="screen">
+</head>
+ 
+<body>
+<svg id="svgForStroke" width="1400" height="1000" viewbox="0 0 1400 1000" baseProfile="full"  xmlns="http://www.w3.org/2000/svg">
+	<g id="arc">
+		<!-- 绘制罐体两侧的圆弧 起点为(25,175)-->
+		<path d="M25 175 A20 80 0 0 0 25 335 Z"  fill="url(#Tank_left)" stroke-width="1"></path>	
+		<defs>
+		<radialGradient id="Tank_left" cx="50%" cy="50%" r="50%" fx="35%" fy="35%">
+		<stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+		<stop offset="100%" style="stop-color:#505050;stop-opacity:1"/>
+		</radialGradient>
+		</defs>
+		
+		<!-- 绘制罐体右侧圆弧 起点为(350,175)-->
+		<path d="M375 175 A20 80 0 0 1 375 335 Z"  fill="url(#Tank_Right)" stroke-width="1"></path>	
+		<defs>
+		<radialGradient id="Tank_Right" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+		<stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+		<stop offset="100%" style="stop-color:#505050;stop-opacity:1"/>
+		</radialGradient>
+		</defs>
+		<!-- 绘制罐体上方的小矩形 绘制竖直的短线起点为(290,175)-->
+		<line stroke="black" stroke-width="6" x1="290" y1="175" x2="290" y2="165"></line>
+		<!-- 绘制短线上的矩形 起点为(275,130) -->
+		<!-- 绘制矩形上面的圆弧 起点为(275,130) 并进行渲染-->
+		<path d="M270 120 A15 7 0 0 1 310 120 Z"  fill="url(#Tank_UP_Rect_Up)" stroke-width="0"></path>	
+		<defs>
+		<radialGradient id="Tank_UP_Rect_Up" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+		<stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+		<stop offset="100%" style="stop-color:#505050;stop-opacity:1"/>
+		</radialGradient>
+		</defs>
+		<!-- 绘制矩形下方的圆弧 起点为(275,160) 并进行渲染 -->
+		<path d="M270 160 A15 7 0 0 0 310 160"  fill="url(#Tank_UP_Rect_Down)" stroke-width="0"></path>	
+		<defs>
+		<radialGradient id="Tank_UP_Rect_Down" cx="60%" cy="60%" r="60%" fx="50%" fy="50%">
+		<stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1"/>
+		<stop offset="100%" style="stop-color:#505050;stop-opacity:1"/>
+		</radialGradient>
+		</defs>
+	</g>
+	<!-- 绘制主罐体下的出水口矩形 起点为(115,315)-->
+	
+</svg>
+<p id="p1"></p>
+</body>
+ 
+</html>

@@ -1,0 +1,525 @@
+﻿#circle0_0 {
+	animation:cirmymove0 2s  infinite linear;
+	-webkit-animation:cirmymove0 2s  infinite linear; /*Safari and Chrome*/
+}
+	@keyframes cirmymove0 
+	{
+	    0%{  transform:rotate(0deg); }
+	    2.8%{ transform:rotate(10deg);  }
+	    5.6%{  transform:rotate(20deg);  }
+	    8.4%{ transform:rotate(30deg); }
+	    11.2%{ transform:rotate(40deg); }
+	    14%{  transform:rotate(50deg);  }
+	    16.8%{ transform:rotate(60deg); }
+	    19.6%{  transform:rotate(70deg); }
+	    22.4%{ transform:rotate(80deg); }
+	    25.2%{ transform:rotate(90deg);  }
+	    28%{  transform:rotate(100deg); }
+	    30.8%{  transform:rotate(110deg);  }
+	    33.6%{  transform:rotate(120deg); }
+	    36.4%{ transform:rotate(130deg);  }
+	    39.2%{  transform:rotate(140deg);  }
+	    42%{  transform:rotate(150deg);  }
+	    44.8%{  transform:rotate(160deg);  }
+	    47.6%{  transform:rotate(170deg); }
+	    50.4%{  transform:rotate(180deg);  }
+	    53.2%{ transform:rotate(190deg); }
+	    56%{transform:rotate(200deg);}
+	    58.8%{  transform:rotate(210deg); }
+	    61.6%{  transform:rotate(220deg); }
+	    64.4%{  transform:rotate(230deg);  }
+	    67.2%{  transform:rotate(240deg);  }
+	    70%{ transform:rotate(250deg); }
+	    72.8%{  transform:rotate(260deg); }
+	    75.6%{ transform:rotate(270deg); }
+	    78.4%{ transform:rotate(280deg);  }
+	   	81.2%{ transform:rotate(290deg);  }
+	    84%{  transform:rotate(300deg); }
+	    86.8%{  transform:rotate(310deg);  }
+	    89.6%{  transform:rotate(320deg); }
+	    92.4%{ transform:rotate(330deg);  }
+	    95.2%{ transform:rotate(340deg); }
+	    98%{ transform:rotate(350deg); }
+	    100%{ transform:rotate(360deg); }      
+    }
+	@-webkit-keyframes cirmymove0 /*Safari and Chrome*/
+	{
+ 		0%{  transform:rotate(0deg); }
+	    2.8%{ transform:rotate(10deg);  }
+	    5.6%{  transform:rotate(20deg);  }
+	    8.4%{ transform:rotate(30deg); }
+	    11.2%{ transform:rotate(40deg); }
+	    14%{  transform:rotate(50deg);  }
+	    16.8%{ transform:rotate(60deg); }
+	    19.6%{  transform:rotate(70deg); }
+	    22.4%{ transform:rotate(80deg); }
+	    25.2%{ transform:rotate(90deg);  }
+	    28%{  transform:rotate(100deg); }
+	    30.8%{  transform:rotate(110deg);  }
+	    33.6%{  transform:rotate(120deg); }
+	    36.4%{ transform:rotate(130deg);  }
+	    39.2%{  transform:rotate(140deg);  }
+	    42%{  transform:rotate(150deg);  }
+	    44.8%{  transform:rotate(160deg);  }
+	    47.6%{  transform:rotate(170deg); }
+	    50.4%{  transform:rotate(180deg);  }
+	    53.2%{ transform:rotate(190deg); }
+	    56%{transform:rotate(200deg);}
+	    58.8%{  transform:rotate(210deg); }
+	    61.6%{  transform:rotate(220deg); }
+	    64.4%{  transform:rotate(230deg);  }
+	    67.2%{  transform:rotate(240deg);  }
+	    70%{ transform:rotate(250deg); }
+	    72.8%{  transform:rotate(260deg); }
+	    75.6%{ transform:rotate(270deg); }
+	    78.4%{ transform:rotate(280deg);  }
+	   	81.2%{ transform:rotate(290deg);  }
+	    84%{  transform:rotate(300deg); }
+	    86.8%{  transform:rotate(310deg);  }
+	    89.6%{  transform:rotate(320deg); }
+	    92.4%{ transform:rotate(330deg);  }
+	    95.2%{ transform:rotate(340deg); }
+	    98%{ transform:rotate(350deg); }
+	    100%{ transform:rotate(360deg); } 
+				
+	}
+
+
+#circle1_0 {
+	animation:cirmymove1 2s  infinite linear;
+	-webkit-animation:cirmymove1 2s  infinite linear; /*Safari and Chrome*/
+/*	-webkit-animation-timing-function:linear; */
+}
+	@keyframes cirmymove1 
+	{
+	    0%{  transform:rotate(0deg); }
+	    /*2.8%{ transform:rotate(10deg);  }*/
+	    /*5.6%{  transform:rotate(20deg);  }*/
+	    /*8.4%{ transform:rotate(30deg); }*/
+	    /*11.2%{ transform:rotate(40deg); }*/
+	    /*14%{  transform:rotate(50deg);  }*/
+	    /*16.8%{ transform:rotate(60deg); }*/
+	    /*19.6%{  transform:rotate(70deg); }*/
+	    /*22.4%{ transform:rotate(80deg); }*/
+	    /*25.2%{ transform:rotate(90deg);  }*/
+	    /*28%{  transform:rotate(100deg); }*/
+	    /*30.8%{  transform:rotate(110deg);  }*/
+	    /*33.6%{  transform:rotate(120deg); }*/
+	    /*36.4%{ transform:rotate(130deg);  }*/
+	    /*39.2%{  transform:rotate(140deg);  }*/
+	    /*42%{  transform:rotate(150deg);  }*/
+	    /*44.8%{  transform:rotate(160deg);  }*/
+	    /*47.6%{  transform:rotate(170deg); }*/
+	    /*50.4%{  transform:rotate(180deg);  }*/
+	    /*53.2%{ transform:rotate(190deg); }*/
+	    /*56%{transform:rotate(200deg);}*/
+	    /*58.8%{  transform:rotate(210deg); }*/
+	    /*61.6%{  transform:rotate(220deg); }*/
+	    /*64.4%{  transform:rotate(230deg);  }*/
+	    /*67.2%{  transform:rotate(240deg);  }*/
+	    /*70%{ transform:rotate(250deg); }*/
+	    /*72.8%{  transform:rotate(260deg); }*/
+	    /*75.6%{ transform:rotate(270deg); }*/
+	    /*78.4%{ transform:rotate(280deg);  }*/
+	   	/*81.2%{ transform:rotate(290deg);  }*/
+	    /*84%{  transform:rotate(300deg); }*/
+	    /*86.8%{  transform:rotate(310deg);  }*/
+	    /*89.6%{  transform:rotate(320deg); }*/
+	    /*92.4%{ transform:rotate(330deg);  }*/
+	    /*95.2%{ transform:rotate(340deg); }*/
+	    /*98%{ transform:rotate(350deg); }*/
+	    100%{ transform:rotate(360deg); }      
+    }
+	@-webkit-keyframes cirmymove1  /*Safari and Chrome*/
+	{
+ 		0%{  transform:rotate(0deg); }
+	    /*2.8%{ transform:rotate(10deg);  }*/
+	    /*5.6%{  transform:rotate(20deg);  }*/
+	    /*8.4%{ transform:rotate(30deg); }*/
+	    /*11.2%{ transform:rotate(40deg); }*/
+	    /*14%{  transform:rotate(50deg);  }*/
+	    /*16.8%{ transform:rotate(60deg); }*/
+	    /*19.6%{  transform:rotate(70deg); }*/
+	    /*22.4%{ transform:rotate(80deg); }*/
+	    /*25.2%{ transform:rotate(90deg);  }*/
+	    /*28%{  transform:rotate(100deg); }*/
+	    /*30.8%{  transform:rotate(110deg);  }*/
+	    /*33.6%{  transform:rotate(120deg); }*/
+	    /*36.4%{ transform:rotate(130deg);  }*/
+	    /*39.2%{  transform:rotate(140deg);  }*/
+	    /*42%{  transform:rotate(150deg);  }*/
+	    /*44.8%{  transform:rotate(160deg);  }*/
+	    /*47.6%{  transform:rotate(170deg); }*/
+	    /*50.4%{  transform:rotate(180deg);  }*/
+	    /*53.2%{ transform:rotate(190deg); }*/
+	    /*56%{transform:rotate(200deg);}*/
+	    /*58.8%{  transform:rotate(210deg); }*/
+	    /*61.6%{  transform:rotate(220deg); }*/
+	    /*64.4%{  transform:rotate(230deg);  }*/
+	    /*67.2%{  transform:rotate(240deg);  }*/
+	    /*70%{ transform:rotate(250deg); }*/
+	    /*72.8%{  transform:rotate(260deg); }*/
+	    /*75.6%{ transform:rotate(270deg); }*/
+	    /*78.4%{ transform:rotate(280deg);  }*/
+	   	/*81.2%{ transform:rotate(290deg);  }*/
+	    /*84%{  transform:rotate(300deg); }*/
+	    /*86.8%{  transform:rotate(310deg);  }*/
+	    /*89.6%{  transform:rotate(320deg); }*/
+	    /*92.4%{ transform:rotate(330deg);  }*/
+	    /*95.2%{ transform:rotate(340deg); }*/
+	    /*98%{ transform:rotate(350deg); }*/
+	    100%{ transform:rotate(360deg); } 
+				
+	}
+
+#circle2_0 {
+	animation:cirmymove2 2s  infinite linear;
+	-webkit-animation:cirmymove2 2s  infinite linear; /*Safari and Chrome*/
+}
+	@keyframes cirmymove2 
+	{
+	    0%{  transform:rotate(0deg); }
+	    2.8%{ transform:rotate(10deg);  }
+	    5.6%{  transform:rotate(20deg);  }
+	    8.4%{ transform:rotate(30deg); }
+	    11.2%{ transform:rotate(40deg); }
+	    14%{  transform:rotate(50deg);  }
+	    16.8%{ transform:rotate(60deg); }
+	    19.6%{  transform:rotate(70deg); }
+	    22.4%{ transform:rotate(80deg); }
+	    25.2%{ transform:rotate(90deg);  }
+	    28%{  transform:rotate(100deg); }
+	    30.8%{  transform:rotate(110deg);  }
+	    33.6%{  transform:rotate(120deg); }
+	    36.4%{ transform:rotate(130deg);  }
+	    39.2%{  transform:rotate(140deg);  }
+	    42%{  transform:rotate(150deg);  }
+	    44.8%{  transform:rotate(160deg);  }
+	    47.6%{  transform:rotate(170deg); }
+	    50.4%{  transform:rotate(180deg);  }
+	    53.2%{ transform:rotate(190deg); }
+	    56%{transform:rotate(200deg);}
+	    58.8%{  transform:rotate(210deg); }
+	    61.6%{  transform:rotate(220deg); }
+	    64.4%{  transform:rotate(230deg);  }
+	    67.2%{  transform:rotate(240deg);  }
+	    70%{ transform:rotate(250deg); }
+	    72.8%{  transform:rotate(260deg); }
+	    75.6%{ transform:rotate(270deg); }
+	    78.4%{ transform:rotate(280deg);  }
+	   	81.2%{ transform:rotate(290deg);  }
+	    84%{  transform:rotate(300deg); }
+	    86.8%{  transform:rotate(310deg);  }
+	    89.6%{  transform:rotate(320deg); }
+	    92.4%{ transform:rotate(330deg);  }
+	    95.2%{ transform:rotate(340deg); }
+	    98%{ transform:rotate(350deg); }
+	    100%{ transform:rotate(360deg); }      
+    }
+	@-webkit-keyframes cirmymove2 /*Safari and Chrome*/
+	{
+ 		0%{  transform:rotate(0deg); }
+	    2.8%{ transform:rotate(10deg);  }
+	    5.6%{  transform:rotate(20deg);  }
+	    8.4%{ transform:rotate(30deg); }
+	    11.2%{ transform:rotate(40deg); }
+	    14%{  transform:rotate(50deg);  }
+	    16.8%{ transform:rotate(60deg); }
+	    19.6%{  transform:rotate(70deg); }
+	    22.4%{ transform:rotate(80deg); }
+	    25.2%{ transform:rotate(90deg);  }
+	    28%{  transform:rotate(100deg); }
+	    30.8%{  transform:rotate(110deg);  }
+	    33.6%{  transform:rotate(120deg); }
+	    36.4%{ transform:rotate(130deg);  }
+	    39.2%{  transform:rotate(140deg);  }
+	    42%{  transform:rotate(150deg);  }
+	    44.8%{  transform:rotate(160deg);  }
+	    47.6%{  transform:rotate(170deg); }
+	    50.4%{  transform:rotate(180deg);  }
+	    53.2%{ transform:rotate(190deg); }
+	    56%{transform:rotate(200deg);}
+	    58.8%{  transform:rotate(210deg); }
+	    61.6%{  transform:rotate(220deg); }
+	    64.4%{  transform:rotate(230deg);  }
+	    67.2%{  transform:rotate(240deg);  }
+	    70%{ transform:rotate(250deg); }
+	    72.8%{  transform:rotate(260deg); }
+	    75.6%{ transform:rotate(270deg); }
+	    78.4%{ transform:rotate(280deg);  }
+	   	81.2%{ transform:rotate(290deg);  }
+	    84%{  transform:rotate(300deg); }
+	    86.8%{  transform:rotate(310deg);  }
+	    89.6%{  transform:rotate(320deg); }
+	    92.4%{ transform:rotate(330deg);  }
+	    95.2%{ transform:rotate(340deg); }
+	    98%{ transform:rotate(350deg); }
+	    100%{ transform:rotate(360deg); } 
+				
+	}
+
+#circle3_0 {
+
+	animation:cirmymove3 2s  infinite;
+	-webkit-animation:cirmymove3 2s  infinite; /*Safari and Chrome*/
+	-webkit-animation-timing-function:linear; 
+}
+	@keyframes cirmymove3 
+	{
+	    0%{  transform:rotate(0deg); }
+	    2.8%{ transform:rotate(10deg);  }
+	    5.6%{  transform:rotate(20deg);  }
+	    8.4%{ transform:rotate(30deg); }
+	    11.2%{ transform:rotate(40deg); }
+	    14%{  transform:rotate(50deg);  }
+	    16.8%{ transform:rotate(60deg); }
+	    19.6%{  transform:rotate(70deg); }
+	    22.4%{ transform:rotate(80deg); }
+	    25.2%{ transform:rotate(90deg);  }
+	    28%{  transform:rotate(100deg); }
+	    30.8%{  transform:rotate(110deg);  }
+	    33.6%{  transform:rotate(120deg); }
+	    36.4%{ transform:rotate(130deg);  }
+	    39.2%{  transform:rotate(140deg);  }
+	    42%{  transform:rotate(150deg);  }
+	    44.8%{  transform:rotate(160deg);  }
+	    47.6%{  transform:rotate(170deg); }
+	    50.4%{  transform:rotate(180deg);  }
+	    53.2%{ transform:rotate(190deg); }
+	    56%{transform:rotate(200deg);}
+	    58.8%{  transform:rotate(210deg); }
+	    61.6%{  transform:rotate(220deg); }
+	    64.4%{  transform:rotate(230deg);  }
+	    67.2%{  transform:rotate(240deg);  }
+	    70%{ transform:rotate(250deg); }
+	    72.8%{  transform:rotate(260deg); }
+	    75.6%{ transform:rotate(270deg); }
+	    78.4%{ transform:rotate(280deg);  }
+	   	81.2%{ transform:rotate(290deg);  }
+	    84%{  transform:rotate(300deg); }
+	    86.8%{  transform:rotate(310deg);  }
+	    89.6%{  transform:rotate(320deg); }
+	    92.4%{ transform:rotate(330deg);  }
+	    95.2%{ transform:rotate(340deg); }
+	    98%{ transform:rotate(350deg); }
+	    100%{ transform:rotate(360deg); }      
+    }
+	@-webkit-keyframes cirmymove3 /*Safari and Chrome*/
+	{
+ 		0%{  transform:rotate(0deg); }
+	    2.8%{ transform:rotate(10deg);  }
+	    5.6%{  transform:rotate(20deg);  }
+	    8.4%{ transform:rotate(30deg); }
+	    11.2%{ transform:rotate(40deg); }
+	    14%{  transform:rotate(50deg);  }
+	    16.8%{ transform:rotate(60deg); }
+	    19.6%{  transform:rotate(70deg); }
+	    22.4%{ transform:rotate(80deg); }
+	    25.2%{ transform:rotate(90deg);  }
+	    28%{  transform:rotate(100deg); }
+	    30.8%{  transform:rotate(110deg);  }
+	    33.6%{  transform:rotate(120deg); }
+	    36.4%{ transform:rotate(130deg);  }
+	    39.2%{  transform:rotate(140deg);  }
+	    42%{  transform:rotate(150deg);  }
+	    44.8%{  transform:rotate(160deg);  }
+	    47.6%{  transform:rotate(170deg); }
+	    50.4%{  transform:rotate(180deg);  }
+	    53.2%{ transform:rotate(190deg); }
+	    56%{transform:rotate(200deg);}
+	    58.8%{  transform:rotate(210deg); }
+	    61.6%{  transform:rotate(220deg); }
+	    64.4%{  transform:rotate(230deg);  }
+	    67.2%{  transform:rotate(240deg);  }
+	    70%{ transform:rotate(250deg); }
+	    72.8%{  transform:rotate(260deg); }
+	    75.6%{ transform:rotate(270deg); }
+	    78.4%{ transform:rotate(280deg);  }
+	   	81.2%{ transform:rotate(290deg);  }
+	    84%{  transform:rotate(300deg); }
+	    86.8%{  transform:rotate(310deg);  }
+	    89.6%{  transform:rotate(320deg); }
+	    92.4%{ transform:rotate(330deg);  }
+	    95.2%{ transform:rotate(340deg); }
+	    98%{ transform:rotate(350deg); }
+	    100%{ transform:rotate(360deg); } 
+				
+	}
+
+#circle4_0 {
+	animation:cirmymove4 2s  infinite linear;
+	-webkit-animation:cirmymove4 2s  infinite linear; /*Safari and Chrome*/
+}
+	@keyframes cirmymove4 
+	{
+	    0%{  transform:rotate(0deg); }
+	    2.8%{ transform:rotate(10deg);  }
+	    5.6%{  transform:rotate(20deg);  }
+	    8.4%{ transform:rotate(30deg); }
+	    11.2%{ transform:rotate(40deg); }
+	    14%{  transform:rotate(50deg);  }
+	    16.8%{ transform:rotate(60deg); }
+	    19.6%{  transform:rotate(70deg); }
+	    22.4%{ transform:rotate(80deg); }
+	    25.2%{ transform:rotate(90deg);  }
+	    28%{  transform:rotate(100deg); }
+	    30.8%{  transform:rotate(110deg);  }
+	    33.6%{  transform:rotate(120deg); }
+	    36.4%{ transform:rotate(130deg);  }
+	    39.2%{  transform:rotate(140deg);  }
+	    42%{  transform:rotate(150deg);  }
+	    44.8%{  transform:rotate(160deg);  }
+	    47.6%{  transform:rotate(170deg); }
+	    50.4%{  transform:rotate(180deg);  }
+	    53.2%{ transform:rotate(190deg); }
+	    56%{transform:rotate(200deg);}
+	    58.8%{  transform:rotate(210deg); }
+	    61.6%{  transform:rotate(220deg); }
+	    64.4%{  transform:rotate(230deg);  }
+	    67.2%{  transform:rotate(240deg);  }
+	    70%{ transform:rotate(250deg); }
+	    72.8%{  transform:rotate(260deg); }
+	    75.6%{ transform:rotate(270deg); }
+	    78.4%{ transform:rotate(280deg);  }
+	   	81.2%{ transform:rotate(290deg);  }
+	    84%{  transform:rotate(300deg); }
+	    86.8%{  transform:rotate(310deg);  }
+	    89.6%{  transform:rotate(320deg); }
+	    92.4%{ transform:rotate(330deg);  }
+	    95.2%{ transform:rotate(340deg); }
+	    98%{ transform:rotate(350deg); }
+	    100%{ transform:rotate(360deg); }      
+    }
+	@-webkit-keyframes cirmymove4 /*Safari and Chrome*/
+	{
+ 		0%{  transform:rotate(0deg); }
+	    2.8%{ transform:rotate(10deg);  }
+	    5.6%{  transform:rotate(20deg);  }
+	    8.4%{ transform:rotate(30deg); }
+	    11.2%{ transform:rotate(40deg); }
+	    14%{  transform:rotate(50deg);  }
+	    16.8%{ transform:rotate(60deg); }
+	    19.6%{  transform:rotate(70deg); }
+	    22.4%{ transform:rotate(80deg); }
+	    25.2%{ transform:rotate(90deg);  }
+	    28%{  transform:rotate(100deg); }
+	    30.8%{  transform:rotate(110deg);  }
+	    33.6%{  transform:rotate(120deg); }
+	    36.4%{ transform:rotate(130deg);  }
+	    39.2%{  transform:rotate(140deg);  }
+	    42%{  transform:rotate(150deg);  }
+	    44.8%{  transform:rotate(160deg);  }
+	    47.6%{  transform:rotate(170deg); }
+	    50.4%{  transform:rotate(180deg);  }
+	    53.2%{ transform:rotate(190deg); }
+	    56%{transform:rotate(200deg);}
+	    58.8%{  transform:rotate(210deg); }
+	    61.6%{  transform:rotate(220deg); }
+	    64.4%{  transform:rotate(230deg);  }
+	    67.2%{  transform:rotate(240deg);  }
+	    70%{ transform:rotate(250deg); }
+	    72.8%{  transform:rotate(260deg); }
+	    75.6%{ transform:rotate(270deg); }
+	    78.4%{ transform:rotate(280deg);  }
+	   	81.2%{ transform:rotate(290deg);  }
+	    84%{  transform:rotate(300deg); }
+	    86.8%{  transform:rotate(310deg);  }
+	    89.6%{  transform:rotate(320deg); }
+	    92.4%{ transform:rotate(330deg);  }
+	    95.2%{ transform:rotate(340deg); }
+	    98%{ transform:rotate(350deg); }
+	    100%{ transform:rotate(360deg); } 
+				
+	}
+
+#circle5_0 {
+	animation:cirmymove5 2s  infinite linear;
+	-webkit-animation:cirmymove5 2s  infinite linear; /*Safari and Chrome*/
+}
+	@keyframes cirmymove5 
+	{
+	    0%{  transform:rotate(0deg); }
+	    2.8%{ transform:rotate(10deg);  }
+	    5.6%{  transform:rotate(20deg);  }
+	    8.4%{ transform:rotate(30deg); }
+	    11.2%{ transform:rotate(40deg); }
+	    14%{  transform:rotate(50deg);  }
+	    16.8%{ transform:rotate(60deg); }
+	    19.6%{  transform:rotate(70deg); }
+	    22.4%{ transform:rotate(80deg); }
+	    25.2%{ transform:rotate(90deg);  }
+	    28%{  transform:rotate(100deg); }
+	    30.8%{  transform:rotate(110deg);  }
+	    33.6%{  transform:rotate(120deg); }
+	    36.4%{ transform:rotate(130deg);  }
+	    39.2%{  transform:rotate(140deg);  }
+	    42%{  transform:rotate(150deg);  }
+	    44.8%{  transform:rotate(160deg);  }
+	    47.6%{  transform:rotate(170deg); }
+	    50.4%{  transform:rotate(180deg);  }
+	    53.2%{ transform:rotate(190deg); }
+	    56%{transform:rotate(200deg);}
+	    58.8%{  transform:rotate(210deg); }
+	    61.6%{  transform:rotate(220deg); }
+	    64.4%{  transform:rotate(230deg);  }
+	    67.2%{  transform:rotate(240deg);  }
+	    70%{ transform:rotate(250deg); }
+	    72.8%{  transform:rotate(260deg); }
+	    75.6%{ transform:rotate(270deg); }
+	    78.4%{ transform:rotate(280deg);  }
+	   	81.2%{ transform:rotate(290deg);  }
+	    84%{  transform:rotate(300deg); }
+	    86.8%{  transform:rotate(310deg);  }
+	    89.6%{  transform:rotate(320deg); }
+	    92.4%{ transform:rotate(330deg);  }
+	    95.2%{ transform:rotate(340deg); }
+	    98%{ transform:rotate(350deg); }
+	    100%{ transform:rotate(360deg); }      
+    }
+	@-webkit-keyframes cirmymove5 /*Safari and Chrome*/
+	{
+ 		0%{  transform:rotate(0deg); }
+	    2.8%{ transform:rotate(10deg);  }
+	    5.6%{  transform:rotate(20deg);  }
+	    8.4%{ transform:rotate(30deg); }
+	    11.2%{ transform:rotate(40deg); }
+	    14%{  transform:rotate(50deg);  }
+	    16.8%{ transform:rotate(60deg); }
+	    19.6%{  transform:rotate(70deg); }
+	    22.4%{ transform:rotate(80deg); }
+	    25.2%{ transform:rotate(90deg);  }
+	    28%{  transform:rotate(100deg); }
+	    30.8%{  transform:rotate(110deg);  }
+	    33.6%{  transform:rotate(120deg); }
+	    36.4%{ transform:rotate(130deg);  }
+	    39.2%{  transform:rotate(140deg);  }
+	    42%{  transform:rotate(150deg);  }
+	    44.8%{  transform:rotate(160deg);  }
+	    47.6%{  transform:rotate(170deg); }
+	    50.4%{  transform:rotate(180deg);  }
+	    53.2%{ transform:rotate(190deg); }
+	    56%{transform:rotate(200deg);}
+	    58.8%{  transform:rotate(210deg); }
+	    61.6%{  transform:rotate(220deg); }
+	    64.4%{  transform:rotate(230deg);  }
+	    67.2%{  transform:rotate(240deg);  }
+	    70%{ transform:rotate(250deg); }
+	    72.8%{  transform:rotate(260deg); }
+	    75.6%{ transform:rotate(270deg); }
+	    78.4%{ transform:rotate(280deg);  }
+	   	81.2%{ transform:rotate(290deg);  }
+	    84%{  transform:rotate(300deg); }
+	    86.8%{  transform:rotate(310deg);  }
+	    89.6%{  transform:rotate(320deg); }
+	    92.4%{ transform:rotate(330deg);  }
+	    95.2%{ transform:rotate(340deg); }
+	    98%{ transform:rotate(350deg); }
+	    100%{ transform:rotate(360deg); } 
+				
+	}
+
+
+
+
+
+

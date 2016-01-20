@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择机组："
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="省份："
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/sp_province"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:dropDownWidth="300dp"
+                android:prompt="@string/province"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地区："
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/sp_district"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:prompt="@string/district"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="县/市："
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/sp_county"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:prompt="@string/county"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小区："
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/sp_community"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:prompt="@string/community"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="泵站："
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/sp_pump"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:prompt="@string/pumps"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机组："
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/sp_assemble"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:dropDownWidth="fill_parent"
+                    android:minWidth="200dp"
+                    android:prompt="@string/assembles"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn"
+                android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#339966"
+        android:padding="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_chart_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_chart_frequency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:padding="5dp"
+            android:text="实时频率曲线" />
+        <Button
+            android:id="@+id/btn_chart_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+             android:padding="5dp"
+             android:background="@drawable/btn"
+            android:text="实时功率曲线" />
+
+        <Button
+            android:id="@+id/btn_chart_inserPress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+             android:padding="5dp"
+             android:background="@drawable/btn"
+            android:text="实时进口压力" />
+
+        <Button
+            android:id="@+id/btn_chart_outPress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/btn"
+              android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="实时出口压力" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_chart_title_option"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="实时频率曲线"
+            android:textColor="#007aa4"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!-- 用于显示折线图的地方，在.java中添加了achartengine中的GraphicalView -->
+    <LinearLayout
+        android:id="@+id/lin_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#339966"
+            android:orientation="horizontal" >
+
+            <!-- 泵站名称 -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="实时参数显示："
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </LinearLayout>
+          <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="参数" />
+
+            <TextView
+                style="@style/textview_layouts2"
+                android:text="实时数据" />
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="设定参数" />
+
+            <TextView
+                style="@style/textview_layouts2"
+                android:text="设定值" />
+        </LinearLayout>
+<!--裂变分割线-->
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+              
+                style="@style/textview_layouts"
+                android:text="采集时间：" />
+
+            <TextView
+                
+                android:id="@+id/tv_settime"
+                style="@style/textview_layouts2"
+                android:text=""
+                android:textColor="#66cc66" />
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="恒压值设定：" />
+<!-- 恒压设定值 -->
+            <TextView
+                android:id="@+id/tv_settingPressure"
+                style="@style/textview_layouts2"
+                android:textColor="#333333"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="进水压力：" />
+
+            <TextView
+                android:id="@+id/tv_inlet_press"
+                style="@style/textview_layouts2"
+                android:text=""
+                android:textColor="#66cc66" />
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="进水压力低限：" 
+                />
+            <!-- 进水压力底限 -->
+            <TextView
+                android:id="@+id/tv_inletPressureLowest"
+                style="@style/textview_layouts2"
+                android:textColor="#333333"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="出水压力：" />
+
+            <TextView
+                android:id="@+id/tv_outlet_press"
+                style="@style/textview_layouts2"
+                android:text=""
+                android:textColor="#66cc66" />
+
+            <TextView
+                
+                style="@style/textview_layouts"
+                android:text="出水压力高限：" 
+                />
+            <!-- 出水压力高限 -->
+            <TextView
+                android:id="@+id/tv_outletPressureMaximum"
+                style="@style/textview_layouts2"
+                android:text=""
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="变频器频率：" />
+
+            <TextView
+                android:id="@+id/tv_frequency"
+                style="@style/textview_layouts2"
+                android:text=""
+                android:textColor="#66cc66" />
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="变频器频率高限：" />
+
+            <TextView
+                android:id="@+id/tv_inverterFrequencyMaximum"
+                style="@style/textview_layouts2"
+                android:textColor="#333333"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="变频器功率：" />
+
+            <TextView
+                android:id="@+id/tv_power_v"
+                style="@style/textview_layouts2"
+                android:text=""
+                android:textColor="#66cc66" />
+
+            <TextView
+                
+                style="@style/textview_layouts"
+                android:text="变频器功率低限：" />
+
+            <TextView
+                android:id="@+id/tv_InverterPowerLowest"
+                style="@style/textview_layouts2"
+                android:textColor="#333333"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="流量：" />
+
+            <TextView
+                android:id="@+id/tv_flow_v"
+                style="@style/textview_layouts2"
+                android:text=""
+                android:textColor="#66cc66" />
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="定期轮换时间：" />
+
+            <TextView
+                android:id="@+id/tv_timingRotationTime"
+                style="@style/textview_layouts2"
+                android:textColor="#333333"
+                android:text="" />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="液位：" />
+
+            <TextView
+                android:id="@+id/tv_liquid_level"
+                style="@style/textview_layouts2"
+                android:text=""
+                android:textColor="#66cc66" />
+
+            <TextView
+                style="@style/textview_layouts"
+                android:text="出水压力量程：" />
+
+            <TextView
+                android:id="@+id/tv_pressureFullscale"
+                style="@style/textview_layouts2"
+                android:textColor="#333333"
+                android:text="" />
+        </LinearLayout>
+     <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+</LinearLayout>

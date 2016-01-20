@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#339966"
+            android:orientation="horizontal" >
+
+            <!-- 泵站名称 -->
+
+            <TextView
+                android:id="@+id/tv_assemble_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="实时参数显示："
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/webview_contain"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" >
+
+            <!--
+                 <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif"
+                android:layout_width="500dp"
+                android:layout_height="400dp"
+                android:src="@drawable/loading46" />
+            -->
+
+            <WebView
+                android:id="@+id/runWebView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scrollbarSize="0dip"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_pumpstatus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#999999"
+            android:textSize="20sp" />
+
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_pumpstatus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#999999"
+            android:textSize="20sp" />
+
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_pumpstatus3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#999999"
+            android:textSize="20sp" />
+
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tv_pumpstatus4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#999999"
+            android:textSize="20sp" />
+
+        <View
+            style="@style/horizontal_layout"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_pumpstatus5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:textColor="#999999"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_real_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#339966"
+                android:text="实时参数显示" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

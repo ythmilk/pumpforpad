@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+</head>
+
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="height:400px"></div>
+
+<!-- ECharts单文件引入 -->
+
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script>
+    function mchart() {
+        var myChart;
+        var option;
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+
+        // 使用
+        require(
+                [
+                    'echarts',
+                    'echarts/chart/line', 'echarts/chart/bar'// 使用柱状图就加载bar模块，按需加载
+                ],
+                function (ec) {
+                    // 基于准备好的dom，初始化echarts图表
+                    myChart = ec.init(document.getElementById('main'));
+                    option = {
+                        tooltip: {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            data: []
+                        },
+
+                     toolbox: {
+        show : true,
+        feature : {
+            mark : {show: false},
+            <!--设置缩放按钮-->
+               dataZoom : {
+        show : true,
+        title : {
+            dataZoom : '区域缩放',
+            dataZoomReset : '区域缩放后退'
+        }
+    },
+        }
+    },
+      
+                        xAxis: [
+                            {
+                                type: 'category',
+                                data: [],
+                                scale: true
+
+                            }
+                        ],
+                        yAxis: [
+                            {
+                                type: 'value',
+                                axisLabel: {
+                                    formatter: ''
+                                }
+                            }
+                        ],
+                        series: [
+                            {
+                                "name": "压力值",
+                                "type": "line",
+                                <!--  设置线条颜色-->
+                                      itemStyle:{
+                                normal:{
+                                color:'#EE4000',
+                                    lineStyle:{
+                                        color:'#EE4000'
+                                    }
+                                }
+
+                            },
+                                "data": []
+                          
+                            }
+                        ]
+                    };
+                    var result = window.AndroidWebview.jsontohtml();
+                    var obj = eval('(' + result + ')');
+                    var xData = new Array();
+                    var yData = new Array();
+                    var lengths = obj.length - 2;
+                    for (var i = lengths; i >= 0; i--) {
+                        xData.push(obj[i].time);
+                        yData.push(obj[i].data);
+                    }
+                    option.series[0].data = yData;
+                    option.xAxis[0].data = xData;
+                    var ss = obj[lengths + 1].seriesName;
+                    switch (ss) {
+                        case '压力':
+                            option.yAxis[0].axisLabel.formatter = '{value} Mpa';
+                                option.series[0].name='压力'
+                            break;
+                        case '功率':
+                            option.yAxis[0].axisLabel.formatter = '{value} Kw';
+                            option.series[0].name='功率'
+                            break;
+                        case '频率':
+                            option.yAxis[0].axisLabel.formatter = '{value} Hz';
+                            option.series[0].name='频率'
+                            break;
+                        case '流量':
+                            option.yAxis[0].axisLabel.formatter = '{value} L/S';
+                            option.series[0].name='流量'
+                            break;
+                        case '液位':
+                            option.yAxis[0].axisLabel.formatter = '{value} m';
+                            option.series[0].name='液位'
+                            break;
+
+                    }
+                    option.legend.data = [ss];
+                    // 为echarts对象加载数据
+                    myChart.setOption(option);
+                }
+        );
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menu_array">
+        <item>主页</item>
+        <item>机组实时监测</item>
+        <item>机组实时曲线监控</item>
+        <item>地图显示</item>
+    </string-array>
+    <string name="app_name">无负压供水</string>
+    <string name="action_settings">退出</string>
+    <string name="action_personal">个人中心</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="province">请选择省份:</string>
+    <string name="district">请选择地区:</string>
+    <string name="county">请选择县/市:</string>
+    <string name="community">请选择小区:</string>
+    <string name="pumps">请选择泵站:</string>
+    <string name="assembles">请选择机组:</string>
+</resources>
