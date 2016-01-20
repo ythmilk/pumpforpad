@@ -91,22 +91,23 @@ public class RealTimeMonitorActivity extends Activity {
 	int width = 0;
 	/** 屏幕高度 */
 	int height = 0;
-
+	/**加载缓冲条*/
+	ProgressDialog dialog ;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.real_time_monitor);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getActionBar().setDisplayShowHomeEnabled(false);
-		//获取屏幕分辨率
-//		DisplayMetrics mDisplayMetrics = new DisplayMetrics();
-//		getWindowManager().getDefaultDisplay().getMetrics(mDisplayMetrics);
-//		width = mDisplayMetrics.widthPixels;
-//		height = mDisplayMetrics.heightPixels;
+		// 获取屏幕分辨率
+		// DisplayMetrics mDisplayMetrics = new DisplayMetrics();
+		// getWindowManager().getDefaultDisplay().getMetrics(mDisplayMetrics);
+		// width = mDisplayMetrics.widthPixels;
+		// height = mDisplayMetrics.heightPixels;
 		WindowManager wm = this.getWindowManager();
 		width = wm.getDefaultDisplay().getWidth();
 		height = wm.getDefaultDisplay().getHeight();
-		
+
 		tv_assemble_name = (TextView) findViewById(R.id.tv_assemble_name);
 		tv_pumpstatus1 = (TextView) findViewById(R.id.tv_pumpstatus1);
 		tv_pumpstatus2 = (TextView) findViewById(R.id.tv_pumpstatus2);
@@ -119,6 +120,10 @@ public class RealTimeMonitorActivity extends Activity {
 		listTextView.add(tv_pumpstatus4);
 		listTextView.add(tv_pumpstatus5);
 		webviewContain = (LinearLayout) findViewById(R.id.webview_contain);
+		dialog= new ProgressDialog(RealTimeMonitorActivity.this);
+		dialog.setMessage("Loading....");
+		dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+		
 		btn_real_time = (Button) findViewById(R.id.btn_real_time);
 		// Webview的相关设置
 		runWebView = (WebView) findViewById(R.id.runWebView);
@@ -126,10 +131,12 @@ public class RealTimeMonitorActivity extends Activity {
 		runWebView.getSettings().setBuiltInZoomControls(false);
 		runWebView.getSettings().setLoadWithOverviewMode(true);
 		runWebView.getSettings().setJavaScriptEnabled(true);
-		//添加js操作接口
+		// 添加js操作接口
+		// runWebView.loadUrl("file:///android_asset/initiaImage.html");
 		runWebView.loadUrl("file:///android_asset/Image_SVG.html");
+		runWebView.setVisibility(View.INVISIBLE);
 		runWebView.addJavascriptInterface(new jsInterface(), "android");
-		
+
 		btn_real_time.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -162,6 +169,7 @@ public class RealTimeMonitorActivity extends Activity {
 		bundle = getIntent().getExtras();
 		id = bundle.getString("assembleId");
 		name = bundle.getString("assembleName");
+		dialog.show();
 		getMonitorInfo();
 		// hand();
 		timeRefreshData();
@@ -358,8 +366,13 @@ public class RealTimeMonitorActivity extends Activity {
 		default:
 			break;
 		}
-		runWebView.loadUrl("javascript:FnConvertCurrentAssemblingSetParamsNow()");
-
+		runWebView
+				.loadUrl("javascript:FnConvertCurrentAssemblingSetParamsNow()");
+	
+		runWebView.setVisibility(View.VISIBLE);
+		if (dialog.isShowing()) {
+			dialog.dismiss();
+		}
 		// String Data = "<!DOCTYPE html><html><body style='overflow:hidden'>"
 		// + "<div style='border:0px;marign:0px;padding:0px'>"
 		// +
@@ -402,8 +415,8 @@ public class RealTimeMonitorActivity extends Activity {
 					e.printStackTrace();
 				} catch (NullPointerException e) {
 					e.printStackTrace();
-				}catch (IllegalStateException e) {
-				}catch (NoSuchElementException e) {
+				} catch (IllegalStateException e) {
+				} catch (NoSuchElementException e) {
 					e.printStackTrace();
 				}
 			}
