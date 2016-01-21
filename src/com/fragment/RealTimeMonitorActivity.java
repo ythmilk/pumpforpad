@@ -26,6 +26,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.app.Fragment;
 import android.text.format.DateFormat;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -93,6 +94,7 @@ public class RealTimeMonitorActivity extends Activity {
 	int height = 0;
 	/**加载缓冲条*/
 	ProgressDialog dialog ;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -361,14 +363,12 @@ public class RealTimeMonitorActivity extends Activity {
 		case "停止状态":
 			tv_pumpstatus5.setTextColor(Color.GRAY);
 			tv_pumpstatus5.setText("辅泵停止运行");
-
 			break;
 		default:
 			break;
 		}
 		runWebView
 				.loadUrl("javascript:FnConvertCurrentAssemblingSetParamsNow()");
-	
 		runWebView.setVisibility(View.VISIBLE);
 		if (dialog.isShowing()) {
 			dialog.dismiss();
@@ -381,7 +381,6 @@ public class RealTimeMonitorActivity extends Activity {
 		// runWebView.loadDataWithBaseURL(IMAGE_URL, Data, "text/html", "utf-8",
 		// null);
 	}
-
 	/**
 	 * 通过webservice获取实时监测信息
 	 * */
@@ -470,7 +469,6 @@ public class RealTimeMonitorActivity extends Activity {
 		super.onPause();
 		task.cancel();
 	}
-
 	/** 通过gif名字获取ID */
 	// public int getGifId(String imageName) {
 	// Context context = RealTimeMonitorActivity.this.getBaseContext();

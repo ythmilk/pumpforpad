@@ -65,32 +65,34 @@ public class HomeFragment extends Fragment {
 	/** 泵站经纬度信息 */
 	List<LatLng> locationList = new ArrayList<LatLng>();
 	BitmapDescriptor bitmap;
-	//public MyLocationListenner myListener = new MyLocationListenner();
+
+	// public MyLocationListenner myListener = new MyLocationListenner();
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		SDKInitializer.initialize(getActivity().getApplicationContext());// 必须在View之前
 		View view = inflater.inflate(R.layout.home, null);
-		userid = getArguments().getString("userId");
+		// userid = getArguments().getString("userId");
+		userid = "1";
 		mMapView = (MapView) view.findViewById(R.id.id_mymap_home);
 		mBaiduMap = mMapView.getMap();
 		// 开启定位图层
 		mBaiduMap.setMyLocationEnabled(true);
 		// 定位初始化
-		//mLocClient = new LocationClient(getActivity());
-		//mLocClient.registerLocationListener(myListener);
+		// mLocClient = new LocationClient(getActivity());
+		// mLocClient.registerLocationListener(myListener);
 		bitmap = BitmapDescriptorFactory.fromResource(R.drawable.icon_mark);
 		// LocationClientOption设置定位相关的属性
-		//LocationClientOption option = new LocationClientOption();
-		//option.setOpenGps(true);// 打开gps
-		//option.setCoorType("bd09ll"); // 设置坐标类型
-		//option.setScanSpan(1000);// 设置的扫描间隔，单位是毫秒
-		//mLocClient.setLocOption(option);
-//		mLocClient.start();
-//		LatLng normal = new LatLng(39.5427, 116.2317);
-//		MapStatusUpdate s = MapStatusUpdateFactory.newLatLngZoom(normal, 9);
-//		mBaiduMap.animateMapStatus(s);
+		// LocationClientOption option = new LocationClientOption();
+		// option.setOpenGps(true);// 打开gps
+		// option.setCoorType("bd09ll"); // 设置坐标类型
+		// option.setScanSpan(1000);// 设置的扫描间隔，单位是毫秒
+		// mLocClient.setLocOption(option);
+		// mLocClient.start();
+		// LatLng normal = new LatLng(39.5427, 116.2317);
+		// MapStatusUpdate s = MapStatusUpdateFactory.newLatLngZoom(normal, 9);
+		// mBaiduMap.animateMapStatus(s);
 		getPumInfo();
 		addInfosOverlay();
 		mBaiduMap.setOnMarkerClickListener(new OnMarkerClickListener() {
@@ -113,6 +115,7 @@ public class HomeFragment extends Fragment {
 		});
 		return view;
 	}
+
 	/** 初始化Marker */
 	private void addInfosOverlay() {
 		handler = new Handler() {
@@ -120,7 +123,7 @@ public class HomeFragment extends Fragment {
 			@Override
 			public void handleMessage(Message msg) {
 				super.handleMessage(msg);
-				LatLngBounds.Builder nn=new LatLngBounds.Builder();
+				LatLngBounds.Builder nn = new LatLngBounds.Builder();
 				for (int i = 0; i < PumpLocationList.size(); i++) {
 					LatLng l = new LatLng(
 							(PumpLocationList.get(i).getLatitude()),
@@ -131,8 +134,10 @@ public class HomeFragment extends Fragment {
 					// 构建MarkerOption，用于在地图上添加Marker
 					OverlayOptions option1 = new MarkerOptions().position(l)
 							.icon(bitmap);
-					//添加泵站下面的说明文字
-					OverlayOptions optionText=new TextOptions().fontSize(24).text(PumpLocationList.get(i).getName()).position(l);
+
+					OverlayOptions optionText = new TextOptions().fontSize(24)
+							.text(PumpLocationList.get(i).getName())
+							.position(l);
 					mBaiduMap.addOverlay(optionText);
 					try {
 						Marker mm = (Marker) mBaiduMap.addOverlay(option1);
@@ -142,26 +147,27 @@ public class HomeFragment extends Fragment {
 					} catch (NullPointerException e) {
 					}
 				}
-				LatLng center=nn.build().getCenter();
+				LatLng center = nn.build().getCenter();
 				MapStatusUpdate u2 = MapStatusUpdateFactory.newLatLng(center);
 				mBaiduMap.animateMapStatus(u2);
 			}
-		
+
 		};
-//		LatLngBounds.Builder nn=new LatLngBounds.Builder();
-//		for (int i = 0; i < locationList.size(); i++) {
-//			nn.include(locationList.get(i));	
-//		}
-//		Log.i("locationListSize", locationList.size()+"");
-//		LatLng center=nn.build().getCenter();
-//		LatLng normal = new LatLng(30.67, 104.06);
-//		MapStatusUpdate u2 = MapStatusUpdateFactory.newLatLng(normal);
-//		Log.i("jingdu", center.latitude+"");
-//		mBaiduMap.animateMapStatus(u2);
-		
+		LatLngBounds.Builder nn = new LatLngBounds.Builder();
+		for (int i = 0; i < locationList.size(); i++) {
+			nn.include(locationList.get(i));
+		}
+		// Log.i("locationListSize", locationList.size()+"");
+		// LatLng center=nn.build().getCenter();
+		// LatLng normal = new LatLng(30.67, 104.06);
+		// MapStatusUpdate u2 = MapStatusUpdateFactory.newLatLng(normal);
+		// Log.i("jingdu", center.latitude+"");
+		// mBaiduMap.animateMapStatus(u2);
+
 		//
-		
+
 	}
+
 	/** 调用webservice获取所有泵站的信息，包括位置，id,名字 */
 	private void getPumInfo() {
 		new Thread() {
@@ -169,22 +175,16 @@ public class HomeFragment extends Fragment {
 				LinkedHashMap<String, Object> params = new LinkedHashMap<String, Object>();
 				params.put("ID", "1");
 				try {
-					
-					PumpLocationList=WebserviceUtil.getAsDataTwo(userid, PumpLocationS.class);
-				}  catch (IOException e) {
+
+					PumpLocationList = WebserviceUtil.getAsDataTwo(userid,
+							PumpLocationS.class);
+				} catch (IOException e) {
 				} catch (NullPointerException e) {
 				}
 				Message msg = new Message();
 				handler.sendMessage(msg);
 			};
 		}.start();
-	}
-	public class MyOnMarkerClickListener implements OnMarkerClickListener {
-
-		@Override
-		public boolean onMarkerClick(Marker arg0) {
-			return false;
-		}
 	}
 
 	/**
@@ -207,11 +207,11 @@ public class HomeFragment extends Fragment {
 			ll = new LatLng(location.getLatitude(), location.getLongitude());
 			mBaiduMap.showInfoWindow(mInfoWindow);
 			// MapStatusUpdate描述地图状态将要发生的变化newLatLng(ll)设置地图的中心点
-//			if (isFirstLoc) {
-//				isFirstLoc = false;
-//				MapStatusUpdate u = MapStatusUpdateFactory.newLatLngZoom(ll, 9);
-//				mBaiduMap.animateMapStatus(u);
-//			}
+			// if (isFirstLoc) {
+			// isFirstLoc = false;
+			// MapStatusUpdate u = MapStatusUpdateFactory.newLatLngZoom(ll, 9);
+			// mBaiduMap.animateMapStatus(u);
+			// }
 
 		}
 	}
@@ -219,7 +219,7 @@ public class HomeFragment extends Fragment {
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		//mLocClient.stop();
+		// mLocClient.stop();
 		mBaiduMap.setMyLocationEnabled(false);
 		mMapView.onDestroy();
 		mMapView = null;
@@ -230,7 +230,8 @@ public class HomeFragment extends Fragment {
 		super.onResume();
 		mMapView.onResume();
 		if (getActivity().getRequestedOrientation() != ActivityInfo.SCREEN_ORIENTATION_PORTRAIT) {
-			getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+			getActivity().setRequestedOrientation(
+					ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		}
 	}
 

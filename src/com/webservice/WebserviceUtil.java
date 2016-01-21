@@ -71,7 +71,6 @@ public class WebserviceUtil {
 		}
 		SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(
 				SoapEnvelope.VER11);
-		
 		envelope.dotNet = true;
 		envelope.bodyOut = request;
 		envelope.setOutputSoapObject(request);

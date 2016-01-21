@@ -32,6 +32,7 @@ import com.data.AssembleS;
 import com.data.CommunityS;
 import com.data.ProvinceS;
 import com.data.PumpingS;
+import com.data.SelectedID;
 import com.data.SetValueData;
 import com.example.netease.R;
 import com.webservice.WebserviceUtil;
@@ -123,6 +124,7 @@ public class SelectAssembleFragment extends BaseFragment implements
 			}
 
 		};
+		//获取省份的spinner内容
 		new Thread() {
 			public void run() {
 				LinkedHashMap<String, Object> params = new LinkedHashMap<String, Object>();
@@ -180,8 +182,14 @@ public class SelectAssembleFragment extends BaseFragment implements
 
 					public void run() {
 						LinkedHashMap<String, Object> params = new LinkedHashMap<String, Object>();
-						params.put("DistrictID", DistrictList.get(position)
-								.getID());
+							params.put("DistrictID", DistrictList.get(position)
+									.getID());
+						
+//						params.put("DistrictID", DistrictList.get(position)
+//								.getID());
+						//已经选择的地区ID 
+//						SelectedID.districtID=DistrictList.get(position).getID();
+								
 						try {
 							CountyList = WebserviceUtil.doSoapList(
 									"AK_GetCountyByDistrict", params,
@@ -206,7 +214,7 @@ public class SelectAssembleFragment extends BaseFragment implements
 					public void run() {
 						LinkedHashMap<String, Object> params = new LinkedHashMap<String, Object>();
 						params.put("countyID", CountyList.get(position).getID());
-
+						//已经选择的县/市ID
 						try {
 							CommunityList = WebserviceUtil.doSoapList(
 									"AK_GetCommunityByCounty", params,

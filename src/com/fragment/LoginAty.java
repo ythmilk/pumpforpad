@@ -125,7 +125,7 @@ public class LoginAty extends FragmentActivity {
 								bd.putInt("USER_PERMISSION", USER_PERMISSION);
 								Log.i("USER_PERMISSION", USER_PERMISSION + "");
 								Intent i = new Intent(LoginAty.this,
-										MainActivity.class);
+										MainActivityTest.class);
 								i.putExtras(bd);
 								startActivity(i);
 								finish();

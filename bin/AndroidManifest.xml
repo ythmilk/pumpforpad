@@ -97,6 +97,7 @@
             android:windowSoftInputMode="adjustUnspecified|stateHidden"
             android:configChanges="orientation|keyboardHidden|screenSize" >
         </activity>
+        <activity android:name="com.fragment.MainActivityTest"></activity>
     </application>
 
 </manifest>
